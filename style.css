@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background: #000;
+    color: #fff;
+}
+.navbar-brand{
+    color: #fff;
+    font-family:'Dancing Script', cursive ;
+}
+.navbar-brand:hover{
+    color: #fff;
+}
+.navbar-toggler{
+    position: relative;
+    padding: 0;
+    background-color: #f5634b;
+}
+.navbar-toggler span p{
+    display: block;
+    height: 5px;
+    width: 100%;
+    margin-top: 13px;
+    background-color: #fff;
+    position: relative;
+}
+span{
+    color: rgb(236,83,83);
+    cursor: pointer;
+}
+.nav-item{
+    padding-right: 50px;
+}
+.nav-link{
+    color: #fff;
+    text-transform:uppercase ;
+    font-family: sans-serif;
+}
+.nav-link:hover{
+    color: rgb(236,83,83);
+}
+.d-flex{
+    color: rgb(236,83,83);
+    font-family:'Dancing Script', cursive ;
+}
+/* =============================main========================== */
+.main{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(imags/background.webp)no-repeat;
+    background-size: cover;
+    height: 110vh;
+}
+.main h1{
+    font-size: 5rem;
+    font-weight: 800;
+}
+.btn1{
+    height: 55px;
+    width: 140px;
+    color: #fff;
+    outline: none;
+    border: none;
+    background: linear-gradient(90deg,#f5634b 0%,#fe9418 100%);
+}
+.btn1:hover{
+    background: linear-gradient(90deg,#fe9418 0%,#f5634b 100%);
+    transition:all 1s;
+    cursor: pointer;
+}
+/* =============================details========================== */
+.details{
+    margin-top: -50px;
+}
+.details h5{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.details a{
+    text-decoration: none;
+    color: rgb(236,83,83);
+}
+.back{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: all 0.8s;
+}
+.back:hover{
+    color: #ddd;
+    cursor: pointer;
+}
+.back::before{
+    content: '';
+    position: absolute;
+    height: 0px;
+    width: 100%;
+    top:0px;
+    left: 0px;
+    background: linear-gradient(90deg,#fe9418 0%,#f5634b 100%);
+    z-index: -1;
+    transition: 0.5s ease;
+}
+.back:hover::before{
+    height: 100%;
+}
+.back:hover a{
+    color: #fff;
+    cursor: pointer;
+
+}
+/* =============================more========================== */
+.more h2{
+    font-weight: 800;
+}
+.more p{
+    font-weight: lighter;
+}
+p{
+    font-size: 1.1rem;
+}
+/* =============================discover========================== */
+.discover{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(imags/cc.jpg)no-repeat;
+    background-size: cover;
+    width: 100%;
+    /* height: 200vh; */
+}
+.discover h1 {
+    font-weight:800;
+    font-size: 2.8rem;
+}
+/* =============================services========================== */
+.services{
+    font-weight: 800;
+    font-size: 2.8rem;
+}
+.services h5{
+    font-weight: 700;
+}
+.fas{
+    font-size: 2.5rem;
+}
+.back:hover .fas{
+    color: white;
+}
+/* =============================coursse========================== */
+.course h1{
+    font-weight: 800;
+    font-size: 2.8rem;
+}
+.course .card{
+    border: none;
+}
+p{
+    font-weight: lighter;
+}
+.btn2{
+    height: 55px;
+    width: 80%;
+    color: #fff;
+    outline: none;
+    border: none;
+    background: linear-gradient(90deg,#f5634b 0%,#fe9418 100%);
+}
+.btn2:hover{
+    background: linear-gradient(90deg,#fe9418 0%,#f5634b 100%);
+    transition:all 1s;
+    cursor: pointer;
+}
+/* =============================footer========================== */
+.footer{
+    background-color: rgb(23, 8, 44);
+    color: #fff;
+}
+.footer h4, h5{
+    font-weight: 900;
+}
+.footer p{
+    margin: 0;
+    color: teal;
+}
+.link{
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.link:hover{
+    color: rgb(236, 83, 83);
+    padding-left: 5px;
+    transition: all 0.5s;
+}
+.fa-angle-double-right{
+    color: teal;
+    font-size: 18px;
+}
+#dada{
+    color: #f5634b;
+}
+.social{
+    color: white;
+    font-size: 24px;
+    transition: all 0.4s;
+}
+.social:hover{
+    color: red;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+.footer .card{
+    background: #000;
+    border-radius: 0;
+}
+/* =============================footer========================== */
+/* =============================Media========================== */
+@media screen and (max-width:550px) {
+    #head{
+        font-size: 50px;
+    }
+}
+/* =============================Media========================== */
